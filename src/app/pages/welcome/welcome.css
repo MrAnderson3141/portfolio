@@ -1,0 +1,18 @@
+.container{
+    background-color: rgb(174, 106, 238);
+    color: white;         
+    padding: 30px;       
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container a {
+    color: rgb(255, 238, 0);          /* couleur du lien */
+    text-decoration: underline;
+}
+
+.CV{        
+    padding: 30px;       
+    width: 100%;
+    box-sizing: border-box;
+}
