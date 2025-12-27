@@ -1,18 +1,39 @@
-.container{
-    background-color: rgb(174, 106, 238);
-    color: white;         
-    padding: 30px;       
+.container {
+    display: flex;            
+    align-items: center;
+    gap: 30px;
+    background-color: rgb(145, 96, 206);
+    color: white;
+    padding: 30px;
     width: 100%;
     box-sizing: border-box;
 }
 
-.container a {
-    color: rgb(255, 238, 0);          /* couleur du lien */
-    text-decoration: underline;
+.profile-img {
+    width: 200px;     
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
-.CV{        
-    padding: 30px;       
+.text {
+    flex: 1;
+}
+
+.title{
+    color:rgb(62, 29, 101);
+}
+
+.CV{
+    display: flex;            
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
     width: 100%;
     box-sizing: border-box;
+    color:rgb(62, 29, 101);
+}
+
+.link{
+    color:rgb(62, 29, 101);
 }

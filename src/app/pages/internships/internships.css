@@ -1,5 +1,5 @@
 .container_even{
-    background-color: rgb(174, 106, 238);
+    background-color: rgba(145, 96, 206);
     color: white;         
     padding: 30px;       
     width: 100%;
@@ -9,11 +9,12 @@
 .container_odd{
     padding: 30px;       
     width: 100%;
+    color:rgb(62, 29, 101);
     box-sizing: border-box;
 }
 
 .cadre {
-    border: 3px solid rgb(60, 15, 102);
+    border: 3px solid rgb(62, 29, 101);
     padding: 30px;               
     border-radius: 10px;         
     margin: 20px 0;     
