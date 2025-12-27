@@ -1,19 +1,66 @@
-<h1 class="title">Welcome</h1>
+<h1>Welcome !</h1>
 
-<div class="container">
-    <img class="profile-img" src="photo.png" alt="Photo de Maxime">
-    <div class="text">
-        <h2>My name is Maxime</h2>
-        <h3>I am following a Computer Science Engineering course at the national institute of science of Rennes (INSA Rennes)</h3>
-        <h3>Passionate and eclectic, I am always looking to learn more in every field. This portfolio will help you learn more about me.</h3> 
+<div class="grid-wrapper">
+    <div class="container">
+        <img class="profile-img" src="photo.png" alt="Photo de Maxime">
+        <div class="text">
+            <h2>My name is Maxime</h2>
+            <h3>I am following a Computer Science Engineering course at the national institute of science of Rennes (INSA Rennes)</h3>
+            <h3>Passionate and eclectic, I am always looking to learn more in every field. This portfolio will help you learn more about me.</h3> 
+        </div>
+    </div>
+
+    <div class="CV">
+        <h2>My French/English CV</h2>
+        <app-carousel></app-carousel>
     </div>
 </div>
 
-<div class="CV">
-    <h2>My French/English CV</h2>
+<div class="grid-wrapper">
 
-</div>
+    <div class="contact-grid">
+        <div class="contact-items">
+            <div class="contact-item">
+                <img src="call.png" alt="téléphone">
+                <a href="#">06 99 21 43 53</a>
+            </div>
+            
+            <div class="contact-item">
+                <img src="mail.png" alt="mail">
+                <a href="mailto:mgaribal@insa-rennes.fr">mgaribal@insa-rennes.fr</a>
+            </div>
+            
+            <div class="contact-item">
+                <img src="commit.png" alt="github">
+                <a href="github.com">mon github</a>
+            </div>
 
-<div class="container">
-    <h2>To contact me, please write at <a class="link" href="mailto:mgaribal@insa-rennes.fr">mgaribal@insa-rennes.fr</a></h2>
+            <div class="contact-item">
+                <img src="link.png" alt="github">
+                <a href="linkedin.com">mon LinkedIn</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="sections-grid">
+        <div class="section-items">
+            <div class="section-item" (click)="goToProj()">
+                <img src="view.png" alt="projets">
+                <a>My Projects</a>
+            </div>
+            <div class="section-item" (click)="goToIntern()">
+                <img src="timeline.png"  alt="internships">
+                <a>My Internships</a>
+            </div>
+            <div class="section-item" (click)="goToHobb()">
+                <img src="movie.png" alt="hobbies">
+                <a>My Hobbies</a>
+            </div>
+            <div class="section-item" (click)="goToCivil()">
+                <img src="theater.png" alt="engagements">
+                <a>My Civil Engagements</a>
+            </div>
+        </div>
+    </div>
 </div>

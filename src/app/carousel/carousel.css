@@ -1,0 +1,27 @@
+.cv-carousel {
+    position: relative;
+    width: 250px;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform .3s ease;
+  }
+  
+  .slide {
+    min-width: 100%;
+    cursor: pointer;
+  }
+  
+  .slide img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 12px 3px rgba(0,0,0,.25);
+  }
+  
+  
+  .prev { left: -40px; }
+  .next { right: -40px; }
+  

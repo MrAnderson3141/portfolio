@@ -1,0 +1,18 @@
+<div class="cv-carousel">
+
+    <div class="slides"
+         [style.transform]="'translateX(-' + (index * 100) + '%)'">
+    @for(cv of pdfs;track $index) {
+      <div class="slide"
+           (click)="open(cv.pdf)">
+  
+        <img [src]="cv.img" [alt]="cv.alt">
+      </div>
+    }
+  
+    </div>
+  
+    <button class="prev" (click)="prev()">&#10094;</button>
+    <button class="next" (click)="next()">&#10095;</button>
+  
+</div>

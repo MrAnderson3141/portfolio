@@ -1,33 +1,53 @@
 <div class="container">
-  <div class="sidebar">
-    
+  <div class="sidebar"> 
     <img class="profile-img" src="profile.png" (click)="goToWelcome()" alt="Profile">
-
     <BR>
-    <nav>
-      <ul>
-        <li><a routerLink="/welcome" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Welcome</a></li>
-        <li><a routerLink="/projects" routerLinkActive="active">My Projects</a></li>
-        <li><a routerLink="/internships" routerLinkActive="active">My Internships</a></li>
-
+    <nav> 
+      <ul> 
+        <li>
+          <a routerLink="/welcome" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Welcome</a>
+        </li> 
+        <li>
+          <a routerLink="/projects" routerLinkActive="active">My Projects</a>
+        </li> 
+        <li>
+          <a routerLink="/internships" routerLinkActive="active">My Internships</a>
+        </li> 
         <li class="other-heading" (click)="toggleOther()">
           Other <span class="arrow">{{ otherOpen ? '▲' : '▼' }}</span>
-        </li>
-
-        @if (otherOpen) {
-          <li class="otherPlace">
-            <a routerLink="/hobbies">My Hobbies</a>
-          </li>
-          <li class="otherPlace">
-            <a routerLink="/civil-engagement">My Civil Engagement</a>
-          </li>
-        }
-
-      </ul>
-    </nav>
+          
+          @if (otherOpen) {
+              <ul class="other-menu">
+                  <li><a routerLink="/hobbies">My Hobbies</a></li>
+                  <li><a routerLink="/civil-engagement">My Civil Engagement</a></li>
+              </ul>
+          }
+      </li>
+          
+      </ul> 
+    </nav> 
+    
+    <div class="contact-items"> 
+      <div class="contact-item"> 
+        <img src="call.png" alt="téléphone"> 
+        <a href="#">06 99 21 43 53</a> 
+      </div> 
+      <hr class="white-hr"> 
+      <div class="contact-item"> 
+        <img src="mail.png" alt="mail"> 
+        <a href="mailto:mgaribal@insa-rennes.fr">mgaribal@insa-rennes.fr</a> 
+      </div> 
+      <hr class="white-hr"> 
+      <div class="contact-item"> <img src="commit.png" alt="github"> 
+        <a href="github.com">mon github</a> </div> 
+      <hr class="white-hr"> 
+      <div class="contact-item"> <img src="link.png" alt="github"> 
+          <a href="linkedin.com">mon LinkedIn</a> 
+      </div> 
+    </div> 
+  </div> 
+    
+    <div class="main-content"> 
+      <router-outlet></router-outlet> 
+    </div> 
   </div>
-
-  <div class="main-content">
-    <router-outlet></router-outlet>
-  </div>
-</div>
