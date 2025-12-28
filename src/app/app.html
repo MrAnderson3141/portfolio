@@ -1,3 +1,5 @@
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=DM+Serif+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
 <div class="container">
   <div class="sidebar"> 
     <img class="profile-img" src="profile.png" (click)="goToWelcome()" alt="Profile">
@@ -14,7 +16,7 @@
           <a routerLink="/internships" routerLinkActive="active">My Internships</a>
         </li> 
         <li class="other-heading" (click)="toggleOther()">
-          Other <span class="arrow">{{ otherOpen ? '▲' : '▼' }}</span>
+          <span class="arrow">Other{{ otherOpen ? '▲' : '▼' }}</span>
           
           @if (otherOpen) {
               <ul class="other-menu">
@@ -30,19 +32,19 @@
     <div class="contact-items"> 
       <div class="contact-item"> 
         <img src="call.png" alt="téléphone"> 
-        <a href="#">06 99 21 43 53</a> 
+        <a href="tel:+33699214353">06 99 21 43 53</a> 
       </div> 
       <hr class="white-hr"> 
       <div class="contact-item"> 
         <img src="mail.png" alt="mail"> 
-        <a href="mailto:mgaribal@insa-rennes.fr">mgaribal@insa-rennes.fr</a> 
+        <a href="mailto:mgaribal@insa-rennes.fr">Mgaribal@insa-rennes.fr</a> 
       </div> 
       <hr class="white-hr"> 
       <div class="contact-item"> <img src="commit.png" alt="github"> 
-        <a href="github.com">mon github</a> </div> 
+        <a href="https://github.com/MrAnderson3141">My GitHub</a> </div> 
       <hr class="white-hr"> 
       <div class="contact-item"> <img src="link.png" alt="github"> 
-          <a href="linkedin.com">mon LinkedIn</a> 
+          <a href="https://www.linkedin.com/in/maxime-garibaldi-167280269/">My LinkedIn</a> 
       </div> 
     </div> 
   </div> 

@@ -10,8 +10,8 @@ export class Carousel {
   index = 0;
 
   pdfs = [
-    { img: 'CV.png', pdf: 'CV.pdf', alt: 'CV Français' },
-    { img: 'CV.png', pdf: 'CV.pdf', alt: 'CV Anglais' }
+    { img: 'CV.png', pdf: 'CV.pdf', alt: 'CV Français',language:"French" },
+    { img: 'CV.png', pdf: 'CV.pdf', alt: 'CV Anglais', language:"English" }
   ];
 
   next() {

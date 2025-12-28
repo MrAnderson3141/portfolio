@@ -1,4 +1,11 @@
+h1{
+    font-family: 'DM Serif Display', serif;
+    color:rgb(62, 29, 101);
+    font-size: 40px;
+}
+
 .timeline {
+    font-family: 'DM Sans', sans-serif;
     position: relative;
     margin: 80px 0;
     padding-left: 100px;
@@ -42,10 +49,10 @@
 }
 
 .timeline-content {
-    margin-left: 120px;  
+    margin-left: 100px;  
     background-color: rgb(145, 96, 206);
     color: white;
-    padding: 30px;
+    padding: 25px;
     border-radius: 15px;
     box-shadow: 0 0 20px 5px rgba(0,0,0,0.25);
     max-width: 700px;
