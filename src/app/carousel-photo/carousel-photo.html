@@ -1,0 +1,21 @@
+<div class="cv-carousel">
+<BR>
+    <div class="slides" [style.transform]="'translateX(-' + (index * 100) + '%)'">
+      @for(photo of photos; track index){
+        <div class="slide" (click)="open(photo)">
+          <img [src]="photo.img" [alt]="photo.alt">
+        </div>
+    }
+    </div>
+
+    <button class="prev" (click)="prev()">&#10094;</button>
+    <button class="next" (click)="next()">&#10095;</button>
+  
+    @if(lightboxOpen){
+    <div class="lightbox" (click)="close()">
+        <img [src]="currentPhoto?.img" [alt]="currentPhoto?.alt" class="lightbox-img">
+    </div>
+    }
+
+</div>
+  
