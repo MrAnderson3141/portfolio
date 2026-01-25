@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="slides">
+        @if(french){
+            <img src="frenchCV.png" alt="mon cv en français" (click)="open('frenchCV.pdf')">
+        }
+        @if(english){
+            <img src="englishCV.png" alt="mon cv en anglais" (click)="open('englishCV.pdf')">
+        }
+        <div>
+            <button (click)="suiv()">&#10094;</button>
+            @if(french){ French Résumé }
+            @if(english){ English Résumé }
+            <button (click)="suiv()">&#10095;</button>
+        </div>
+    </div>
+</div>

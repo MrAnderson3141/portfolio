@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="slides">
+        <img [src]="photos[index]" (click)='open()' alt="les photos que j'ai pu réaliser">
+        <div>
+            <button (click)="next()">&#10094;</button>
+            <button (click)="prev()">&#10095;</button>
+        </div>
+    </div>
+
+    @if(isOpen){
+        <div class="open" (click)="open()">
+            <img [src]="photos[index]" alt="la photo mise en exergue">
+        </div>
+    }
+</div>

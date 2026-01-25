@@ -1,0 +1,39 @@
+.timeline{
+    display:flex;
+    flex-direction: column;
+    gap:1em;
+}
+
+.event{
+    border-radius: 40px;
+    box-shadow: 0 0 10px #0009;
+    padding:20px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 18px;
+}
+
+h3{
+    font-family: "Archivo Black", sans-serif;
+    font-size: 20px;
+}
+
+h1{
+    font-family: "Archivo Black", sans-serif;
+    font-size: 45px;
+}
+
+.entreprise{
+    text-decoration: none;
+}
+
+.entreprise:hover{
+    text-decoration: rgb(105,40,177) underline dashed; 
+}
+
+.date{
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}

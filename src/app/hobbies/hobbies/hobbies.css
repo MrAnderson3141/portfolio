@@ -1,0 +1,77 @@
+.projects {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+}
+
+.container{
+    box-shadow: 0 0 12px 3px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    border-radius: 40px;            
+    width: 100%;
+    aspect-ratio: 1;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;   
+}
+
+.container_film{
+    box-shadow: 0 0 12px 3px rgba(0, 0, 0, 0.25);
+    
+    padding: 20px;
+    border-radius: 40px;            
+    width: 100%;
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;   
+}
+
+.project-media{
+    border-radius: 10px;
+
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.media{
+    
+}
+
+.title{
+    font-family: "Archivo Black", sans-serif;
+}
+
+h1{
+    font-size: 45px;
+}
+
+h3{
+    font-family: "Lora", serif;
+    font-style:italic;
+    font-size:30px;
+}
+
+h4{
+    font-family: "Archivo Black", sans-serif;
+    font-style:italic;
+    font-size:22px;
+}
+
+h2{
+    font-size:35px;
+}
+
+h5{
+    font-family: "Lora", serif;
+    font-style:italic;
+    font-size:18px; 
+}

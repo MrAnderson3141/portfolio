@@ -1,0 +1,97 @@
+.projects{
+    padding-left:60px;
+    padding-right: 60px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap :2em;
+}
+
+.container_even,
+.container_odd{
+    width: 350px;
+    aspect-ratio: 1.25;
+    border-radius: 40px;
+    padding:20px;box-shadow: 0 0 10px #0009;
+}
+
+.media{
+    width:100%;
+    height:auto;
+}
+
+h1{
+    font-family: "Archivo Black", sans-serif;
+    font-size: 45px;
+}
+
+h3{
+    font-family: "Archivo Black", sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    font-style: normal;
+}
+
+h4{
+  font-family: "Lora", serif;
+  font-style:italic;
+  font-size:20px;
+  font-weight: normal;
+}
+
+.h4-hard{
+  font-family: "Lora", serif;
+  font-style:normal;
+  font-size:20px;
+  font-weight: bold;
+}
+
+img{
+    width:40px;
+    height:40px;
+}
+
+
+/*based on the code from : https://prismic.io/blog/css-hover-effects*/
+.card {
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-face,
+.card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.card-face {
+    background: white;
+    border: 1px solid #e5e7eb;
+}
+
+.card-back {
+    background: white;
+    transform: rotateY(180deg);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
